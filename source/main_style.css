@@ -92,8 +92,12 @@ svg {top: 0px; position: fixed; z-index: 2; left:-8px;}
 #line_2{display: block; position: relative; color: #cccccc; top:0px; left: 0.1%; z-index: -1;}
 
 #map1{position:relative; display: block; margin: auto; width:46vw; height:27vw;}
-.label {font-family: "Noto Serif KR", serif; background-color:white; font-size:12px; padding:5px;}
-#label2 {font-family: "Noto Serif KR", serif; width:320px; background-color:white; font-size:12px; padding:10px;}
-#label3 {font-family: "Noto Serif KR", serif; width:240px; background-color:white; font-size:12px; padding:10px;}
-#label4 {font-family: "Noto Serif KR", serif; width:215px; background-color:white; font-size:12px; padding:10px;}
-#label5 {font-family: "Noto Serif KR", serif; width:170px; background-color:white; font-size:12px; padding:10px;}
+.label {font-family: "Noto Serif KR", serif; background-color:white; font-size:12px; padding:5px; color: black;}
+#label2 {font-family: "Noto Serif KR", serif; width:320px; background-color:white; font-size:12px; padding:10px; color: black;}
+#label3 {font-family: "Noto Serif KR", serif; width:240px; background-color:white; font-size:12px; padding:10px; color: black;}
+#label4 {font-family: "Noto Serif KR", serif; width:215px; background-color:white; font-size:12px; padding:10px; color: black;}
+#label5 {font-family: "Noto Serif KR", serif; width:170px; background-color:white; font-size:12px; padding:10px; color: black;}
+
+#daumFlashTarget{position:relative; display: block; margin: auto; width:46vw; height:27vw;}
+
+#line_3{display: block; position: relative; color: #cccccc; top:0px; left: 0.1%; z-index: -1;}
