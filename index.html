@@ -477,6 +477,7 @@ var markerImage = new kakao.maps.MarkerImage(markerImageUrl, markerImageSize, ma
     markerPosition = new kakao.maps.LatLng(); // 마커가 표시될 위치입니다
 
 marker.setMap(map1);
+marker.setMap(map2);
 
 
 
@@ -668,5 +669,82 @@ polyline6.setMap(map2);
 
 
 
+<script>
+//Navigation
+topb.onmouseover = function(){
+  topb.style.cursor = "pointer";
+  }
+
+introduce.onmouseover = function(){
+  introduce.style.cursor = "pointer";
+  }
+
+develop.onmouseover = function(){
+  develop.style.cursor = "pointer";
+  }
+
+analysis.onmouseover = function()
+  {analysis.style.cursor = "pointer";
+  }
+
+analysis_1.onmouseover = function()
+  {analysis_1.style.cursor = "pointer";
+  }
+
+analysis_2.onmouseover = function()
+  {analysis_2.style.cursor = "pointer";
+  }
+
+analysis_3.onmouseover = function()
+  {analysis_3.style.cursor = "pointer";
+  }
+
+analysis_4.onmouseover = function()
+  {analysis_4.style.cursor = "pointer";
+  }
+
+doubt.onmouseover = function(){
+  doubt.style.cursor = "pointer";
+  }
+
+now.onmouseover = function(){
+  now.style.cursor = "pointer";
+  }
+
+topb.onclick = function(){
+window.scrollBy({ top: -13000, behavior: 'smooth' });
+  }
+
+introduce.onclick = function(){
+  document.getElementById('entry').scrollIntoView();
+  }
+
+develop.onclick = function(){
+  document.getElementById('list2').scrollIntoView();
+  }
+
+analysis.onclick = function(){
+  document.getElementById('list2_5').scrollIntoView();}
+
+analysis_1.onclick = function(){
+  document.getElementById('list3').scrollIntoView();}
+
+analysis_2.onclick = function(){
+  document.getElementById('list4').scrollIntoView();}
+
+analysis_3.onclick = function(){
+  document.getElementById('list5').scrollIntoView();}
+
+analysis_4.onclick = function(){
+  document.getElementById('list6').scrollIntoView();}
+
+doubt.onclick = function(){
+  document.getElementById('list7').scrollIntoView();
+  }
+
+now.onclick = function(){
+  document.getElementById('list8').scrollIntoView();
+  }
+</script>
 </body>
 </html>
