@@ -288,11 +288,6 @@ var mapContainer1 = document.getElementById('map1'), // 지도를 표시할 div
     			  image: markerImage // 마커이미지 설정
 		    });
 
-		    // 마커에 표시할 인포윈도우를 생성합니다
-		    var infowindow = new daum.maps.InfoWindow({
-		        content: positions[i].content // 인포윈도우에 표시할 내용
-		    });
-
         var markerImageUrl = 'https://ifh.cc/g/zG8yd.png', // 마커이미지의 주소입니다
             markerImageSize = new kakao.maps.Size(40, 40), // 마커이미지의 크기입니다
             markerImageOptions = {offset: new kakao.maps.Point(18, 40)}; // 마커0이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
@@ -301,6 +296,11 @@ var mapContainer1 = document.getElementById('map1'), // 지도를 표시할 div
         // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
         var markerImage = new kakao.maps.MarkerImage(markerImageUrl, markerImageSize, markerImageOptions),
             markerPosition = new kakao.maps.LatLng(); // 마커가 표시될 위치입니다
+
+		    // 마커에 표시할 인포윈도우를 생성합니다
+		    var infowindow = new daum.maps.InfoWindow({
+		        content: positions[i].content // 인포윈도우에 표시할 내용
+		    });
 
 		    // 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
 		    // 이벤트 리스너로는 클로저를 만들어 등록합니다
