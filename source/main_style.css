@@ -7,13 +7,13 @@ html {scroll-behavior: smooth;}
 body { background-color: #222222; margin-top: -60px;}
 @font-face {font-family: 'MINIMALHARD2'; font-style: normal; font-weight: normal;src: local('MINIMALHARD2'), url('mh2__.woff') format('woff');}
 #logo_type{top:20px; left:4%; z-index: 11; position: fixed;}
-#logoSpread{font-family: "minimalhard2"; font-weight: bolder; font-size: 1.0vw; position: fixed; color: white; z-index: 3; top: 25px; padding: 0.1vw 2vw 0.1vw 0.1vw; opacity: 0; left: 6%; visibility: hidden; transition: all 0.2s ease-in; width:400px; }
+#logoSpread{font-family: 'Pridi', serif; font-weight: bolder; font-size: 1.0vw; position: fixed; color: white; z-index: 3; top: 25px; padding: 0.1vw 2vw 0.1vw 0.1vw; opacity: 0; left: 6%; visibility: hidden; transition: all 0.2s ease-in; width:400px; }
 #logo_type:hover #logoSpread {opacity: 1; left: 7%; visibility: visible; z-index: 11;}
 
 #nav_menu{position: fixed; margin-top: 84px;}
 #nav_menu {margin-left: 71%; z-index: 11;}
 #nav_menu tr {color:white;}
-#nav_menu tr th {font-family: "minimalhard2"; font-weight: lighter; font-size: 1.0vw; padding: 0.1vw 2vw 0.1vw 0.1vw; transition: all 0.2s ease-in;}
+#nav_menu tr th {font-family: 'Pridi', serif; font-weight: lighter; font-size: 1.0vw; padding: 0.1vw 2vw 0.1vw 0.1vw; transition: all 0.2s ease-in;}
 svg {top: 0px; position: fixed; z-index: 10; left:-8px;}
 
 #nav_menu tr > #menu1:hover #sub-menu {opacity: 1; visibility: visible;}
