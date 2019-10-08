@@ -291,8 +291,6 @@ var mapContainer1 = document.getElementById('map1'), // 지도를 표시할 div
       var markerImage = new kakao.maps.MarkerImage(markerImageUrl, markerImageSize, markerImageOptions),
           markerPosition = new kakao.maps.LatLng(); // 마커가 표시될 위치입니다
 
-      marker.setMap(map1);
-
     for (var i = 0; i < positions.length; i ++) {
 		    // 마커를 생성합니다
 		    var marker = new daum.maps.Marker({
@@ -481,6 +479,7 @@ customOverlay.setMap(map1);
 customOverlay2.setMap(map1);
 customOverlay3.setMap(map1);
 
+marker.setMap(map1);
 marker.setMap(map2);
 
 
