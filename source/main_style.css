@@ -5,8 +5,8 @@
 /*Main Style*/
 html {scroll-behavior: smooth;}
 body { background-color: #222222; margin-top: -60px;}
-#logo_type{top:21px; right:93%; z-index: 11; position: fixed;}
-#logoSpread{font-family: 'Cantata One', serif; font-weight: bolder; font-size: 20px; position: fixed; color: #cccccc; z-index: 3; top: 28px; left: 8%; transition: all 0.2s ease-in; width:400px; }
+#logo_type{top:21px; right:92%; z-index: 11; position: fixed;}
+#logoSpread{font-family: 'Cantata One', serif; font-weight: bolder; font-size: 20px; position: fixed; color: #cccccc; z-index: 3; top: 28px; left: 9.2%; transition: all 0.2s ease-in; width:400px; }
 #logo_type:hover #logoSpread {z-index: 11;}
 
 #nav_menu{position: fixed; margin-top: 84px;}
