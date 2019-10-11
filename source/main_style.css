@@ -5,12 +5,12 @@
 /*Main Style*/
 html {scroll-behavior: smooth;}
 body { background-color: #222222; margin-top: -60px;}
-#logo_type{top:18px; left:4%; z-index: 11; position: fixed;}
-#logoSpread{font-family: 'Cantata One', serif; font-weight: bolder; font-size: 20px; position: fixed; color: #cccccc; z-index: 3; top: 25px; padding: 0.1vw 2vw 0.1vw 0.1vw; opacity: 0; left: 6%; visibility: hidden; transition: all 0.2s ease-in; width:400px; }
-#logo_type:hover #logoSpread {opacity: 1; left: 7%; visibility: visible; z-index: 11;}
+#logo_type{top:21px; right:93%; z-index: 11; position: fixed;}
+#logoSpread{font-family: 'Cantata One', serif; font-weight: bolder; font-size: 20px; position: fixed; color: #cccccc; z-index: 3; top: 28px; left: 8%; transition: all 0.2s ease-in; width:400px; }
+#logo_type:hover #logoSpread {z-index: 11;}
 
 #nav_menu{position: fixed; margin-top: 84px;}
-#nav_menu {margin-left: 74%; z-index: 11;}
+#nav_menu {left: 74%; z-index: 11;}
 #nav_menu tr {color:#cccccc;}
 #nav_menu tr th {font-family: 'Cantata One', serif; font-weight: lighter; font-size: 20px; padding: 0.1vw 2vw 0.1vw 0.1vw; transition: all 0.2s ease-in;}
 svg {top: 0px; position: fixed; z-index: 10; left:-8px;}
@@ -36,15 +36,14 @@ svg {top: 0px; position: fixed; z-index: 10; left:-8px;}
 /* navigation menu */
 
 #lft_nav_menu{display:block; position: fixed; top: 9vw; left:19%; width:10vw; float: left;}
-#lft_nav_menu dl {color:#999999;}
-#lft_nav_menu dl dt {font-family: "Noto Serif KR", serif; font-size:0.7vw; border-bottom: 0.1px solid #999999; padding: 1.5vw 0px 0.3vw 0.1vw; margin: 0.1vw 0px 0px 0px;}
-#lft_nav_menu dt:hover{color: #ffffff; border-bottom: 0.1px solid #ffffff;}
+#lft_nav_menu dl {color:#666666;}
+#lft_nav_menu dl dt {font-family: "Noto Serif KR", serif; font-size:0.7vw; border-bottom: 0.1px solid #666666; padding: 1.5vw 0px 0.3vw 0.1vw; margin: 0.1vw 0px 0px 0px;}
 #topb{position: fixed; margin: auto; width: 50px; height: 50px; left:84%; top:88%;}
 #topb:hover{animation: tops 0.75s both;}
 @keyframes tops {
 	0% {opacity: 0; top:88%;}
 	100% {opacity: 1; top:87%;}}
-#title_1{border-bottom: 0.1px solid #ffffff; font-weight: bolder; text-align: center; color: #cccccc; }
+#title_1{font-weight: bolder; text-align: center;}
 
 
 

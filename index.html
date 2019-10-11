@@ -19,7 +19,7 @@
     <div id="logo_type">
       <div id="logoSpread">Cold Case Profiling
       </div>
-      <img src="source/logoType.png" style="width: 1.7vw; height: 1.7vw;">
+      <img src="source/logoType.png" style="width: 50px; height: 40px;">
     </div>
     </a>
   <div id="nav_menu">
@@ -48,16 +48,16 @@
   <div id="container">
     <div id="lft_nav_menu">
       <dl>
-        <dt id="title_1">1. 송혜희 양 실종 사건</dt>
-        <dt id="introduce">&nbsp&nbspI. 도입</dt>
-        <dt id="develop">&nbsp&nbspII. 전개</dt>
-        <dt id="analysis">&nbsp&nbspIII. 분석</dt>
-        <dt id="analysis_1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1) 프로파일링 맵</dt>
-        <dt id="analysis_2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2) MISSING</dt>
-        <dt id="analysis_3">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3) 수사 과정</dt>
-        <dt id="analysis_4">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4) 또다른 분석</dt>
-        <dt id="doubt">&nbsp&nbspIV. 의혹</dt>
-        <dt id="now">&nbsp&nbspV. 결말</dt>
+        <dt id="title_1" style="font-weight: bolder; text-align: center; border-bottom: 0.1px solid #ffffff; color:#ffffff;">1. 송혜희 양 실종 사건</dt>
+        <dt id="introduce" class="summary">&nbsp&nbspI. 도입</dt>
+        <dt id="develop" class="summary">&nbsp&nbspII. 전개</dt>
+        <dt id="analysis" class="summary">&nbsp&nbspIII. 분석</dt>
+        <dt id="analysis_1" class="summary">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1) 프로파일링 맵</dt>
+        <dt id="analysis_2" class="summary">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2) MISSING</dt>
+        <dt id="analysis_3" class="summary">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3) 수사 과정</dt>
+        <dt id="analysis_4" class="summary">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4) 또다른 분석</dt>
+        <dt id="doubt" class="summary">&nbsp&nbspIV. 의혹</dt>
+        <dt id="now" class="summary">&nbsp&nbspV. 결말</dt>
       </dl>
     </div>
     <div id="container_contents">
@@ -720,39 +720,135 @@ now.onmouseover = function(){
   }
 
 topb.onclick = function(){
-window.scrollBy({ top: -13000, behavior: 'smooth' });
+window.scrollBy({ top: -14000, behavior: 'smooth' });
   }
+
+
+function resetSummary(){
+  var t = document.getElementsByClassName('summary');
+  for(var i=0; i<t.length; i++){
+    t[i].style.color = "#666";
+    t[i].style.borderBottom = "0.1px solid #666";
+  }
+}
+
+
+
 
 introduce.onclick = function(){
   document.getElementById('entry').scrollIntoView();
-  }
+  resetSummary();introduce.style.color = "#fff";
+}
 
 develop.onclick = function(){
   document.getElementById('list2').scrollIntoView();
-  }
+  resetSummary();this.style.color = "#fff";
+}
 
 analysis.onclick = function(){
-  document.getElementById('list2_5').scrollIntoView();}
+  document.getElementById('list2_5').scrollIntoView();
+  resetSummary();this.style.color = "#fff";
+}
 
 analysis_1.onclick = function(){
-  document.getElementById('list3').scrollIntoView();}
+  document.getElementById('list3').scrollIntoView();
+  resetSummary();this.style.color = "#fff";
+}
 
 analysis_2.onclick = function(){
-  document.getElementById('list4').scrollIntoView();}
+  document.getElementById('list4').scrollIntoView();
+  resetSummary();this.style.color = "#fff";
+}
 
 analysis_3.onclick = function(){
-  document.getElementById('list5').scrollIntoView();}
+  document.getElementById('list5').scrollIntoView();
+  resetSummary();this.style.color = "#fff";
+}
 
 analysis_4.onclick = function(){
   document.getElementById('list6').scrollIntoView();}
 
 doubt.onclick = function(){
   document.getElementById('list7').scrollIntoView();
-  }
+  resetSummary();this.style.color = "#fff";
+}
 
 now.onclick = function(){
   document.getElementById('list8').scrollIntoView();
-  }
+  resetSummary();this.style.color = "#fff";
+}
+
+window.onscroll = function(){
+    var t = document.documentElement.scrollTop + document.body.scrollTop;
+      if(t > 600){
+        resetSummary();introduce.style.color = "#fff";
+        introduce.style.borderBottom = "0.1px solid #fff";
+      }
+
+      if(t > 1600){
+        resetSummary();develop.style.color = "#fff";
+        develop.style.borderBottom = "0.1px solid #fff";
+      }
+
+      if(t > 2550){
+        resetSummary();analysis_1.style.color = "#fff";
+        analysis_1.style.borderBottom = "0.1px solid #fff";
+        analysis.style.color = "#fff";
+        analysis.style.borderBottom = "0.1px solid #fff";
+      }
+
+      if(t > 4179){
+        resetSummary();analysis_2.style.color = "#fff";
+        analysis_2.style.borderBottom = "0.1px solid #fff";
+        analysis.style.color = "#fff";
+        analysis.style.borderBottom = "0.1px solid #fff";
+      }
+
+      if(t > 5328){
+        resetSummary();analysis_3.style.color = "#fff";
+        analysis_3.style.borderBottom = "0.1px solid #fff";
+        analysis.style.color = "#fff";
+        analysis.style.borderBottom = "0.1px solid #fff";
+      }
+
+      if(t > 6551){
+        resetSummary();analysis_4.style.color = "#fff";
+        analysis_4.style.borderBottom = "0.1px solid #fff";
+        analysis.style.color = "#fff";
+        analysis.style.borderBottom = "0.1px solid #fff";
+      }
+
+      if(t > 8400){
+        resetSummary();doubt.style.color = "#fff";
+        doubt.style.borderBottom = "0.1px solid #fff";
+      }
+
+      if(t > 9465){
+        resetSummary();now.style.color = "#fff";
+        now.style.borderBottom = "0.1px solid #fff";
+      }
+
+
+
+
+
+
+    if(t>600){
+    title.style.animationPlayState = "running";
+    a1.style.animationPlayState = "running";
+    a2.style.animationPlayState = "running";
+    a3.style.animationPlayState = "running";
+    a4.style.animationPlayState = "running";
+    field.style.animationPlayState = "running";
+    }
+    if(t>10300){
+    end_headline.style.animationPlayState = "running";
+    }
+
+    monitor.innerHTML = t + "px";
+}
+
+
 </script>
 </body>
 </html>
