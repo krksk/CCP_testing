@@ -10,7 +10,7 @@ body { background-color: #222222; margin-top: -60px;}
 #logo_type:hover #logoSpread {z-index: 11;}
 
 #nav_menu{position: fixed; margin-top: 84px;}
-#nav_menu {left: 74%; z-index: 11;}
+#nav_menu {right: 2.5%; z-index: 11;}
 #nav_menu tr {color:#cccccc;}
 #nav_menu tr th {font-family: 'Cantata One', serif; font-weight: lighter; font-size: 20px; padding: 0.1vw 2vw 0.1vw 0.1vw; transition: all 0.2s ease-in;}
 svg {top: 0px; position: fixed; z-index: 10; left:-8px;}
