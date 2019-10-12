@@ -27,7 +27,7 @@ svg {top: 0px; position: fixed; z-index: 10; left:-8px;}
 
 #footer{font-family: "Noto Serif KR", serif; display: block; font-size:14px; color: #cccccc; top:14000px; width: 600px; height: 80px; margin:auto; position: relative; text-align: center;}
 
-#monitor {top: 25px; width: 100px; height: 40px; background: red; position: fixed; right: 0px; line-height: 40px; color: white; z-index: 12;}
+/* #monitor {top: 25px; width: 100px; height: 40px; background: red; position: fixed; right: 0px; line-height: 40px; color: white; z-index: 12;} */
 
 
 
